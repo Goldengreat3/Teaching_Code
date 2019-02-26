@@ -1,13 +1,5 @@
 ##############################################################################
-############################## Import Libraries ##############################
-##############################################################################
-import numpy as np
-import matplotlib.pyplot as plt
-
-
-
-##############################################################################
-### You do not need to specify variable type, python does that on its own ###
+### You do not need to specify variable type, python does that on its own  ###
 ##############################################################################
 ### Vars ###
 a = 3
@@ -18,13 +10,11 @@ c = '3'
 print('a Type: ', type(a))
 print('b Type: ', type(b))
 print('c Type: ', type(c))
-
 print('---------------------------------------------------------------------')
 
 ##############################################################################
 ### You can force python to set the variable type if you want              ###
 ##############################################################################
-
 ### Vars ###
 a = str(3)
 b = int(3.0)
@@ -34,7 +24,6 @@ c = float('3')
 print('a Type: ', type(a))
 print('b Type: ', type(b))
 print('c Type: ', type(c))
-
 print('---------------------------------------------------------------------')
 
 ##############################################################################
@@ -80,6 +69,14 @@ b = 5
 c, d = add_and_sub_two_nums(a, b)
 print(c, d)
 
+### Order matters ###
+d, c = add_and_sub_two_nums(a, b)
+print(c, d)
+
+### You can also have all the returns go to one var ###
+c = add_and_sub_two_nums(a, b)
+print(c, c[0], c[1])
+
 print('---------------------------------------------------------------------')
 
 ##############################################################################
@@ -96,6 +93,20 @@ if(a == 1):
 if(a != 10):
     print('a != 10')
 
+### If else ###
+if(a == 10):
+    print('a == 10')
+else:
+    print('a != 10')
+
+### If, else if, else ###  
+if(a == 10):
+    print('a == 10')
+elif(a == 1):
+    print('a == 1')
+else:
+    print('a != 1 or 10')
+
 ### While Loop ###
 count = 0
 while(count < 3):
@@ -109,6 +120,9 @@ for i in a:
     
 for i in range(len(a)):
     print('For: ', i)
+    
+for i in range(len(a)):
+    print('For: ', a[i])
     
 print('---------------------------------------------------------------------')
   
