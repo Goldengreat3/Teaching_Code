@@ -99,15 +99,16 @@ if(a != 10):
 ### While Loop ###
 count = 0
 while(count < 3):
-    print(count)
+    print('While: ', count)
+    count = count + 1
     
 ### For loop ###
 a = ['cat', 'dog', 'horse']
 for i in a:
-    print(i)
+    print('For: ', i)
     
 for i in range(len(a)):
-    print(i)
+    print('For: ', i)
     
 print('---------------------------------------------------------------------')
   
