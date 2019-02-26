@@ -96,7 +96,21 @@ if(a == 1):
 if(a != 10):
     print('a != 10')
 
-
+### While Loop ###
+count = 0
+while(count < 3):
+    print(count)
+    
+### For loop ###
+a = ['cat', 'dog', 'horse']
+for i in a:
+    print(i)
+    
+for i in range(len(a)):
+    print(i)
+    
+print('---------------------------------------------------------------------')
+  
 
 
 
